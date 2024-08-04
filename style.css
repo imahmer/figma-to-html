@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container {
+    width: 490px;
+    background-color: #fff;
+    border-radius: 9px;
+    padding: 15px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.font-weight-6 {
+    font-weight: 600;
+}
+
+.top-header-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-header-content-wrapper > span > i {
+    color: #ccc;
+    transition: color .1s;
+    cursor: pointer; 
+}
+
+.top-header-content-wrapper > span > i:hover {
+    color: #000;
+}
+
+.search-component {
+    width: 100%;
+    position: relative; /* Absolute ko handle karny k liye relative lazmi use karna parega */
+    margin-top: 10px;
+}
+
+/* Search component may span hai jiski class search-icon hai */
+.search-component span.search-icon, .search-component span.filter-icon {
+    position: absolute;
+    top: 8px; /* Jab humen position ka attribute use karein */
+}
+
+.search-component span.search-icon {
+    left: 9px;
+    color: #ccc;
+}
+
+.search-component span.filter-icon {
+    right: 9px;
+}
+
+.search-input {
+    width: inherit;
+    padding: 9px 28px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+.search-input::placeholder {
+    color: #ccc; /* Change this to the color you want */
+    opacity: 1;  /* Ensures the color is fully opaque */
+}
