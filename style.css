@@ -9,13 +9,15 @@ body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    
 }
 
 .container {
     width: 490px;
     background-color: #fff;
     border-radius: 9px;
-    padding: 15px;
+    overflow: hidden;
+    
 }
 
 .uppercase {
@@ -26,9 +28,15 @@ body {
     font-weight: 600;
 }
 
+.header {
+    padding: 15px;
+    
+}
+
 .top-header-content-wrapper {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .top-header-content-wrapper > span > i {
@@ -73,4 +81,94 @@ body {
 .search-input::placeholder {
     color: #ccc; /* Change this to the color you want */
     opacity: 1;  /* Ensures the color is fully opaque */
+}
+
+.content {
+    padding: 0 15px 10px 15px;
+}
+
+.left-content-wrapper {
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    border-radius: 9px;
+    padding: 22px 28px;
+    font-size: 1rem;
+    margin: 15px 0;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.name-holder, .Vendor-holder {
+    position: absolute;
+    top: 10px;
+}
+
+.name-holder {
+    left: 9px;
+}
+
+.Vendor-holder {
+    right: 9px;
+
+}
+
+.word-wrapper> ul {
+    padding: 0;
+    
+}
+
+.checkbox-wrapper> img {
+    margin: 0 10px;
+}
+
+input {
+    margin: 0 5px;
+}
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+
+.checkbox-wrapper> p{
+    margin: 0 10px;
+}
+
+
+.word-wrapper> ul> li {
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer {
+    border: 1px solid #ccc;
+    
+}
+
+.footer-button {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F7F8;
+    padding: 15px;
+    
+}
+
+.btn-submit {
+    width: 120px;
+    height: 40px;
+    margin: 0 20px;
+    
+}
+
+.footer-button> span {
+    font-weight: 600;
+    font-size: 14px;
 }
