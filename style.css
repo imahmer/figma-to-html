@@ -115,8 +115,8 @@ body {
 }
 
 .word-wrapper> ul {
+    margin: 0;
     padding: 0;
-    
 }
 
 .checkbox-wrapper> img {
@@ -141,8 +141,7 @@ input {
 .word-wrapper> ul> li {
     list-style: none;
     align-items: center;
-    padding: 0;
-    margin: 10px 0;
+    padding: 10px 0;
 }
 
 .footer {
@@ -171,4 +170,16 @@ input {
 .footer-button> span {
     font-weight: 600;
     font-size: 14px;
+}
+
+.word-wrapper > ul > li {
+    border-bottom: 1px solid #ccc;
+}
+
+.word-wrapper > ul > li:last-child {
+    border-bottom: none;
+}
+
+.word-wrapper > ul > li:hover {
+    background-color: #F3F7F8;
 }
